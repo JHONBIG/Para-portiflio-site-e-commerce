@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetodo site</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estiloso.css">
 </head>
 <body>
-    <!--NAVEGADOR-->
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+  
+  <!--NAVEGADOR-->
+  <header>
+     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/Arquivo-img/logo12.png" alt="image" width="50"> Igreja Ortodoxa Siríaca</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -52,28 +53,90 @@
           </div>
         </div>
       </nav>
-</main>
+  </header>
+   
 
+  <!--CONTATO-->
+  <article>
+    <h1>Contato</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum alias enim ratione eligendi sit? Distinctio tempora neque laborum eaque quia praesentium voluptatem quo, repellendus odit alias veniam laudantium voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam iste officiis voluptatem. Delectus amet vero ex quaerat, obcaecati voluptatibus quibusdam. Maiores, repudiandae? Pariatur nam dolorem earum ipsum ut? Rem!</p>
+  </article>
+    
+  <br><div class="container">
+    <div class="escudo-container"><img src="/Arquivo-img/escudo preto.png" alt="Emblema da igreja ortodoxa" width="59"></div>
+    <br><form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nome:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Seu nome">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Sobrenome:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">País:</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Brazil">Brasil</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="Australia">Australia</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Síria">Síria</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-25">
+          <label for="e-mail1">E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="e-mail1" name="e-mail" placeholder="@exemple.com.br">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Mensagem:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Sua mensagem..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row-botao">
+      <button type="button" class="btn btn-primary">Enviar</button>
+    </div>
+    </form>
+  </div>
+  
+   <!--NOTA DE ATENÇão-->
+   <div class="danger">
+    <p><img src="/Arquivo-img/icons8-warning-shield-64.png"></p>
+    <p><strong>Atenção!</strong> Dentro de 4 dias útieis a resposta chegará por e-mail</p>
+  </div>
+    
+    
+    
+  
+<!--RODAPÉ-->
 
-    <!--CardsdeNoticia-->
-        <article>
-            <div class="card mb-3">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Titulo Aleatório</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptatibus nam temporibus quia dolor quam nisi in voluptas beatae quas. Officiis vero porro inventore possimus sequi quibusdam, numquam ad magni?</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                <img src="..." class="card-img-bottom" alt="...">
-              </div>
-          </article>
+  
+
+  
 </body>
 <script src="JSestrutura.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </html>
