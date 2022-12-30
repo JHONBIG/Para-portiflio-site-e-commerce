@@ -35,6 +35,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    box-shadow: 1px 1px 3px;
     
   }
   
@@ -61,8 +62,9 @@ section {
   
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #ecececde;
     padding: 49px;
+    box-shadow: 1px 2px 3px;
   
   }
   
